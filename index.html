@@ -8,7 +8,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-</head>
+    <!--      Dropdown with image        -->
+    <title>Adding image to dropdown list</title>
+    <style>
+        .dropbtn {
+            background-color: #af4c4c;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+  
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+  
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 
+                0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+  
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+  
+        .dropdown-content a:hover {
+            background-color: #de4747
+        }
+  
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+  
+        .dropdown:hover .dropbtn {
+            background-color: #de4747;
+        }
+    </style>
+    <!--    Dropdown with image   -->
+  </head>
 
 
     <nav class="navbar bg-light">
@@ -95,6 +142,37 @@
                 Sepete Ekle <i class = "fas fa-shopping-cart"></i>
               </button>
               <button type = "button" class = "btn" onclick="location.href='website/opensea.html' ">NFT AL</button>
+
+              <!--Dropdown Menu İmaged-->
+
+              <h2 style="color: hsl(0, 69%, 53%)">
+                    Size En Uygun Vücut Tipini Seçin
+                </h2>
+                  
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Vücut Tipleri
+                    </button>
+                      
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <img src="MenuImage/1.PNG"
+                            width="50" height="150"> Vücut Tipi 1</a>
+          
+                        <a href="#">
+                            <img src="MenuImage/2.PNG"
+                            width="50" height="150"> Vücut Tipi 2</a>
+                        <a href="#">
+                            <img src="MenuImage/3.PNG"
+                            width="50" height="150"> Vücut Tipi 3</a>
+                        <a href="#">
+                            <img src="MenuImage/4.PNG"
+                            width="50" height="150"> Vücut Tipi 4</a>            
+                    </div>
+                </div>
+
+              <!--Dropdown Menu İmaged-->
+            
             </div>
   
             <div class = "social-links">
